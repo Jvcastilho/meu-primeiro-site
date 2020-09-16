@@ -1,0 +1,750 @@
+html{
+    font-size: calc(1em + 1vw);
+    cursor: crosshair;
+    zoom: 0.7;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
+#intro{
+    width: 100%;
+    height: 40em;
+    background: url(img/capapraticasobsoletas-02.png);
+    background-size: cover;
+    animation: capa 35s both infinite ease-in-out;
+
+}
+
+@keyframes capa{
+    0%{background-position: left top}
+    50%{background-position: center bottom}
+    100%{background-position: left top}
+}
+
+ul{
+    margin: 0%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: black;
+    font-family:'Inknut Antiqua', serif;
+    font-size: 1.7vh;
+    color: white;
+    font-weight: 300;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+
+}
+
+li{
+    position: relative;
+    right: 2vw;
+    margin: 2vw;
+}
+
+#conteinertextointro{
+    width: 70vw;
+
+}
+
+.titulo{
+    font-family: attic-antique, serif;
+    font-style: normal;
+}
+
+#tituloprincipal{
+    font-size: 14vw;
+    line-height: 100%;
+    padding-left: 10%;
+    position: relative;
+    left: -1%;
+    top: 4.3vw;
+
+    }
+
+#descricaotitulo{
+    padding-left: 10%;
+    position: relative;
+    width: 70%;
+    line-height: 150%;
+    font-size: 0.6em;
+    min-height: min-content;
+    max-lines: 5;
+    color: black;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+}
+
+.separador{
+    font-family: attic-antique, serif;
+    font-weight: 800;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    font-variant: small-caps;
+    letter-spacing: 1vw;
+    height: 7vh;
+    justify-items: center;
+    position: relative;
+    top: 2vh;
+}
+
+.citacao{
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0% 12%;
+    font-size: 0.85em;
+    line-height: 150%;
+    font-style: italic;
+}
+
+.citacaoautor{
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+    text-align: end;
+    margin: 0% 25%;
+    font-size: 0.55em;
+    line-height: 150%;
+    font-style: normal;
+}
+
+.textos{
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+    text-align: start;
+    margin: auto;
+    font-size: 0.65em;
+    line-height: 150%;
+}
+
+.secao{
+    background-color:white;
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+    
+
+}
+
+#prologo{
+    font-size: 0.6em;
+    text-justify: inter-word;
+}
+
+#prologo:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: .3em;
+}
+
+.barra{
+    clear: both;
+    width: 100%;
+    position: relative;
+    top: 2em;
+    border: 1em;
+    height: 3px;
+    background: black;
+    background-image: linear-gradient(to right, white, #ccc, white);
+    overflow: hidden;
+
+}
+
+.conteinercapitulo{
+    margin: 10%;
+    background-color: white;
+    
+}
+
+#img0{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 5vh;
+    border: white solid 1px;
+    overflow: visible;
+    background-image: url(img/ajax.jpg);
+    background-size: 200vh;
+    animation: backgroundmovesubir2 55s both infinite;
+    transition: height 1s, background-size 1s;
+}
+
+#img0:hover{
+    position: relative;
+    height: 120vh;
+    transition: height 1s, background-size 1s;
+}
+
+#legenda0{
+    font-size: 0.4em;
+    background-color: white;
+    height: 4vh;
+    max-height: 10vh;
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 1vh;
+
+    }
+
+#img1{
+    position: relative;
+    width: 35%;
+    height: 82vh;
+    margin-bottom: 3vh;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/lycur.jpg);
+    background-size: 100vh;
+    animation: backgroundmove 55s both infinite;
+    float: left;
+}
+
+@keyframes backgroundmove{
+    0%{background-position: left center}
+    50%{background-position: right center}
+    100%{background-position: left center}
+}
+
+#cap1{
+    border: greenyellow solid 0px;
+    height: 92vh;
+    float: right;
+    width: 61%;
+    overflow: auto;
+    font-size: 0.7em;
+    margin-bottom: 5vh;
+
+}
+
+#cap1:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: .3em;
+}
+
+#legenda1{
+    font-size: 0.4em;
+    background-color: white;
+    height: 8vh;
+    max-height: 10vh;
+    overflow: auto;
+    float: left;
+    width: 35%;
+    margin-bottom: 3vh;
+}
+
+.legenda{
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+    font-size: 0.4em;
+    line-height: 150%;
+    font-style: normal;
+
+}
+
+#img2{
+    position: relative;
+    width: 45%;
+    height: 80vh;
+    margin-bottom: 3vh;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/skull.jpg);
+    background-size: 115vh;
+    animation: backgroundmove 55s both infinite;
+    float: left;
+}
+
+
+#img3{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    margin-bottom: 3vh;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/tumi.jpg);
+    background-size: 122vh;
+    animation: backgroundmovesubir 45s both infinite;
+    float: right;
+}
+
+#legenda2{
+    font-size: 0.4em;
+    background-color: white;
+    height: 8vh;
+    max-height: 10vh;
+    overflow: auto;
+    float: left;
+    width: 35%;
+    margin-bottom: 3vh;
+}
+
+#legenda3{
+    font-size: 0.4em;
+    background-color: white;
+    height: 8vh;
+    max-height: 10vh;
+    overflow: auto;
+    float: right;
+    width: 35%;
+    margin-bottom: 3vh;
+    text-align: end;
+}
+
+@keyframes backgroundmovesubir{
+    0%{background-position: top center}
+    50%{background-position: bottom center}
+    100%{background-position: top center}
+    }
+
+    @keyframes backgroundmovesubir2{
+        0%{background-position: top left}
+        50%{background-position: bottom right}
+        100%{background-position: top left}
+        }
+    
+
+    
+#cap2{
+    border: greenyellow solid 0px;
+    width: 100%;
+    overflow: auto;
+    font-size: 0.7em;
+    margin-bottom: 5vh;
+    padding: 1%;
+
+}
+
+#cap2:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: .3em;
+}
+
+#img4{
+    position: relative;
+    width: 35vw;
+    height: 60vh;
+    margin: 0.8vw;
+    margin-bottom: 3vh;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/trep.png);
+    background-size: 100vh;
+    animation: backgroundmovesubir2 71s both infinite;
+    float: left;
+    transition: transform 1s;
+    transform-origin: bottom left;
+}
+
+#img5{
+    position: relative;
+    width: 35vw;
+    height: 60vh;
+    margin: 0.8vw;
+    margin-bottom: 3vh;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/exorc.jpg);
+    background-size: 140vh;
+    animation: backgroundmovesubir2 56s both infinite;
+    float: left;
+    left: 2vw;
+    transition: transform 1s;
+    transform-origin: bottom center;
+}
+
+#img6{
+    position: relative;
+    width: 35vw;
+    height: 60vh;
+    margin: 0.8vw;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/blood.jpg);
+    background-size: 90vh;
+    animation: backgroundmovesubir2 61s both infinite;
+    float: right;
+    left: 2vw;
+    transition: transform 1s;
+    transform-origin: bottom right;
+}
+
+#img6:hover{
+    position: relative;
+    background-size: cover;
+    transition: transform 1s;
+    z-index: 10;
+    transform: scale(2);
+    transform-origin: bottom right;
+}
+
+#img5:hover{
+    position: relative;
+    background-size: cover;
+    transition: transform 1s;
+    z-index: 10;
+    transform: scale(2);
+    transform-origin: bottom center;
+}
+
+#img4:hover{
+    position: relative;
+    background-size: cover;
+    transition: transform 1s;
+    z-index: 10;s;
+    transform: scale(2);
+    transform-origin: bottom left;
+}
+
+#legenda4{
+    font-size: 0.4em;
+    background-color: white;
+    position: relative;
+    width: 35vw;
+    height: 7vh;
+    margin: 0.8vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    float: left;
+}
+
+#legenda5{
+    font-size: 0.4em;
+    background-color: white;
+    position: relative;
+    width: 35vw;
+    height: 7vh;
+    margin: 0.8vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    float: left;
+    left: 2vw;
+    text-align: center;
+    
+}
+
+#legenda6{
+    font-size: 0.4em;
+    background-color: white;
+    position: relative;
+    width: 35vw;
+    height: 7vh;
+    margin: 0.8vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    float: right;
+    left: 2vw;
+    text-align: end;
+}
+
+
+#img7{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin: 0.8vw;
+    margin-left: -2vw;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/witch.png);
+    background-size: 300vh;
+    animation: backgroundmovesubir2 70s both infinite;
+    left: 2vw;
+    -webkit-transition: height 1s, background-size 1s;
+    margin-bottom: 2vw;
+    clear: both;
+}
+
+#img7:hover{
+    position: relative;
+    height: 120vh;
+    -webkit-transition: height 1s, background-size 1s;
+}
+
+
+#cap3{
+    border: greenyellow solid 0px;
+    width: 70vw;
+    overflow: auto;
+    font-size: 0.7em;
+    margin-bottom: 5vh;
+    padding: 1%;
+    float: left;
+
+}
+
+#cap3:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: .3em;
+}
+
+#img8{
+    position: relative;
+    width: 40vw;
+    height: 60vh;
+    margin: 0.8vw;
+    margin-left: -2vw;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/asylum.jpg);
+    background-size: 90vh;
+    animation: backgroundmovesubir2 59s both infinite;
+    float: right;
+    left: 2vw;
+    transition: transform 1.5s;
+    transform-origin: top right;
+}
+
+#img8:hover{
+    transform: scale(2);
+    transform-origin: top right;
+    transition: transform 1.5s, z-index 1.5s;
+    z-index: 10;
+}
+
+#img9{
+    position: relative;
+    width: 40vw;
+    height: 60vh;
+    margin: 0.8vw;
+    margin-left: -2vw;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/patients.jpg);
+    background-size: 90vh;
+    animation: backgroundmovesubir2 74s both infinite;
+    float: right;
+    left: 2vw;
+    transition: transform 1.5s;
+    transform-origin: bottom right;
+}
+
+#img9:hover{
+    transform: scale(2,2);
+    transform-origin: bottom right;
+    transition: transform 1.5s, z-index 1.5s;
+    z-index: 10;
+}
+
+#legenda7{
+    font-size: 0.4em;
+    background-color: white;
+    position: relative;
+    width: 70vw;
+    height: 7vh;
+    margin: 0vw;
+    margin-bottom: -2vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    left: 0vw;
+    text-align: start;
+}
+
+#legenda8{
+    font-size: 0.4em;
+    position: relative;
+    width: 70vw;
+    height: 7vh;
+    margin: 0.4vw;
+    margin-bottom: -2vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    left: 0vw;
+    text-align: start;
+    float: left;
+    z-index: -1;
+}
+
+#legenda9{
+    font-size: 0.4em;
+    position: relative;
+    width: 70vw;
+    height: 7vh;
+    margin: 0.4vw;
+    margin-bottom: -2vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    left: 0vw;
+    text-align: startS;
+    float: left;
+    z-index: -1;
+}
+
+#img10{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin: 0.8vw;
+    margin-left: -2vw;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/histeria.jpg);
+    background-size: 300vh;
+    animation: backgroundmovesubir2 63s both infinite;
+    left: 2vw;
+    -webkit-transition: height 1s, background-size 1s;
+    margin-bottom: 2vw;
+    clear: both;
+}
+
+#img10:hover{
+    position: relative;
+    height: 120vh;
+    -webkit-transition: height 1s, background-size 1s;
+}
+
+#img11{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin: 0.8vw;
+    margin-left: -2vw;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/Röykän_sairaala.jpg);
+    background-size: 360vh;
+    animation: backgroundmovesubir2 85s both infinite;
+    left: 2vw;
+    -webkit-transition: height 1s, background-size 1s;
+    margin-bottom: 2vw;
+    clear: both;
+}
+
+#img11:hover{
+    position: relative;
+    height: 120vh;
+    -webkit-transition: height 1s, background-size 1s;
+}
+
+#img12{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin: 0.8vw;
+    margin-left: -2vw;
+    border: goldenrod solid 1px;
+    overflow: visible;
+    background-image: url(img/Hall_Freud_Jung_in_front_of_Clark_1909.jpg);
+    background-size: 300vh;
+    animation: backgroundmovesubir2 93s both infinite;
+    left: 2vw;
+    -webkit-transition: height 1s, background-size 1s;
+    margin-bottom: 2vw;
+    clear: both;
+}
+
+#img12:hover{
+    position: relative;
+    height: 120vh;
+    -webkit-transition: height 1s, background-size 1s;
+}
+
+#legenda10{
+    font-size: 0.4em;
+    background-color:white;
+    position: relative;
+    width: 113.4vw;
+    height: 7vh;
+    margin: 0vw;
+    margin-bottom: -2vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    left: 0vw;
+    text-align: start;
+}
+
+#legenda11{
+    font-size: 0.4em;
+    background-color: white;
+    position: relative;
+    width: 113.4vw;
+    height: 7vh;
+    margin: 0vw;
+    margin-bottom: -2vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    left: 0vw;
+    text-align: center;
+}
+
+#legenda12{
+    font-size: 0.4em;
+    background-color: white;
+    position: relative;
+    width: 113.4vw;
+    height: 7vh;
+    margin: 0vw;
+    margin-bottom: -2vw;
+    border: goldenrod solid 0px;
+    overflow: auto;
+    left: 0vw;
+    text-align: end;
+}
+
+#cap4:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: .3em;
+}
+
+#cap4{
+    border: greenyellow solid 0px;
+    width: 100%;
+    overflow: auto;
+    font-size: 0.7em;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    padding: 1%;
+
+}
+
+a{
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+    font-variant: small-caps;
+    text-decoration: none;
+    cursor: -moz-grab;
+    
+}
+
+footer{
+    background-color: black;
+    height: 101vw;
+    width: 100%;
+
+}
+
+#creditos{
+    color: white;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: normal;
+    padding: 11%;
+    line-height: 170%;
+    background-color: black;
+}
+
+#numeros{
+    color: white;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+    font-size: 2em;
+    font-style: normal;
+    padding: 11%;
+    line-height: 170%;
+    background-color: black;
+}
